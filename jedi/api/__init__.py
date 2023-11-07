@@ -45,7 +45,8 @@ from jedi.inference.utils import to_list
 
 # Jedi uses lots and lots of recursion. By setting this a little bit higher, we
 # can remove some "maximum recursion depth" errors.
-sys.setrecursionlimit(3000)
+# [Juno]: Juno's runtime sets its own recursion limits.
+# sys.setrecursionlimit(3000)
 
 
 class Script:
